@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Snow Animation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+   
+        body {
+            background-image: url('https://th.bing.com/th/id/R.3890213abb36bb100423bfca81af61ff?rik=7tKqQDW9ibi%2bIQ&riu=http%3a%2f%2fwww.zastavki.com%2fpictures%2foriginals%2f2013%2fNew_Year_wallpapers_Decorating_a_new_year_tree_in_the_Year_of_the_Horse_050593_.jpg&ehk=R00R%2fdk3h8CcSs8Cqr5ZpfkRGTDt1rEvid8daj6Fzyg%3d&risl=1&pid=ImgRaw&r=0');
+            background-size: cover;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .snowflake {
+            color: #ffffff;
+            font-size: 2em;
+            position: absolute;
+            top: -50px;
+            pointer-events: none;
+            animation-name: fall;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        #button{
+            padding: 10px 20px;
+            margin-top: 200px;
+            background-color: red;
+            border: 2px solid white;
+            border-radius: 10px;
+            color: white;
+            font-size: 17px;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) translateX(100px) rotate(360deg);
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+<body>
+   <center> <button id="button">Start Brainrot</button></center>
+   <audio id="audio" src="./The weather outside is rizzy but the fire is so skibidi meme meme memes shorts fyp skibidi.mp3"></audio>
+</body>
+<script src="app.js"></script>
+</html>
